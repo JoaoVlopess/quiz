@@ -32,8 +32,8 @@ export const QuestionItem = ({question, count, onAnswer}: Props) => {
                 className={`p-2 text-lg my-4 border rounded-md bg-slate-700
                     
                     ${selectedAnswer !== null ? 'cursor-auto' : 'cursor-pointer hover:opacity-60'}
-                    ${selectedAnswer !== null && selectedAnswer === question.answer && selectedAnswer === key && 'border-green-300 bg-green-500'}
-                    ${selectedAnswer !== null && selectedAnswer !== question.answer && selectedAnswer === key && 'border-red-300 bg-red-500'}
+                    ${selectedAnswer !== null && selectedAnswer === question.answer && selectedAnswer === key && 'border-green-200 bg-green-600'}
+                    ${selectedAnswer !== null && selectedAnswer !== question.answer && selectedAnswer === key && 'border-red-200 bg-red-600'}
                     `}                
                 >{item}</div>
             ))}
